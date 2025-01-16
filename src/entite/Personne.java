@@ -12,6 +12,35 @@ public class Personne {
         this.adresse = new AdressePostale((byte) 0, "", 0, "");
     }
 
+    // Method that return name in maj and surname
+    public String getNomMaj() {
+        return this.nom.toUpperCase() + " " + this.prenom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
+    }
+
+    public void setAdresse(AdressePostale adresse) {
+        this.adresse = adresse;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public String getPrenom() {
+        return prenom;
+    }
+
+    public AdressePostale getAdresse() {
+        return adresse;
+    }
+
     // Constructor with name, surname, and address
     public Personne(String nom, String prenom, AdressePostale adresse) {
         this.nom = nom;
